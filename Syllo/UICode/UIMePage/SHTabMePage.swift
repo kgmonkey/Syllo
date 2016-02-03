@@ -21,6 +21,22 @@ class SHTabMePage: SHCommonSetting {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    //Recognize left and right swipe
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: "handleSwipe:")
+        swipeGesture.direction = [.Right, .Left]
+        self.view.addGestureRecognizer(swipeGesture)
+    }
+
+    //Handles the swipe
+    func handleSwipe(sender: UISwipeGestureRecognizer) {
+        print(sender.direction)
+    }
+
+    
+    
     
     
     /*
