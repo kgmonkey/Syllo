@@ -9,12 +9,16 @@
 import Foundation
 import UIKit
 
-class SHTabHomePage: SHCommonSetting {
+class SHTabHomePage: SHCollectionView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.stackedLayout.layoutMargin = UIEdgeInsetsZero
+        self.exposedLayoutMargin = UIEdgeInsetsMake(20.0, 0.0, 0.0, 0.0)
+        self.collectionView?.backgroundColor = UIColorFromRGB(0x992299)
         
         // Do any additional setup after loading the view.
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,5 +36,4 @@ class SHTabHomePage: SHCommonSetting {
     // Pass the selected object to the new view controller.
     }
     */
-    
 }

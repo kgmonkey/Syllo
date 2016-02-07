@@ -31,7 +31,7 @@ class SHMainFrame: UITabBarController {
     }
     
     func addTabs(){
-        let tabHomePage = SHTabHomePage(nibName: nil, bundle: nil)
+        let tabHomePage = SHTabHomePage(collectionViewLayout: TGLStackedLayout())
         let navNavigationPage1 = UINavigationController(rootViewController:tabHomePage)
         navNavigationPage1.title = "Home";
         navNavigationPage1.navigationBar.barTintColor = navigationColor
