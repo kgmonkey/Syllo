@@ -1,0 +1,10 @@
+PODS:
+  - TGLStackedViewController (1.1.0)
+
+DEPENDENCIES:
+  - TGLStackedViewController (~> 1.1)
+
+SPEC CHECKSUMS:
+  TGLStackedViewController: 2edc69ada1f9ed269d982d9936d7ff567890e634
+
+COCOAPODS: 0.38.2
