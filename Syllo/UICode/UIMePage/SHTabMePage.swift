@@ -21,7 +21,7 @@ class SHTabMePage: SHCommonSetting {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func 
     
     /*
     // MARK: - Navigation
